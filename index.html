@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вышегуров Мусса — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0e1117;
+            color: #e6e6e6;
+            line-height: 1.6;
+        }
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top, #1f2937, #0e1117);
+        }
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            color: #9ca3af;
+        }
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #111827;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #1f2937;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* Cookie / consent banner */
+        .consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #020617;
+            border-top: 1px solid #1f2937;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+        }
+        .consent button {
+            background: #38bdf8;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .consent a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Вышегуров Мусса</h1>
+    <p>Студент ИБ · Python Developer · AI Enthusiast</p>
+</header>
+
+<section>
+    <h2>Обо мне</h2>
+    <p>
+        Я студент 1 курса направления «Информационная безопасность».
+        Занимаюсь разработкой, анализом угроз и применением нейросетей
+        в задачах автоматизации и безопасности.
+    </p>
+</section>
+
+<section>
+    <h2>Навыки</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>Python</h3>
+            <p>Разработка Telegram-ботов, автоматизация, API, логика и архитектура.</p>
+        </div>
+        <div class="card">
+            <h3>Нейросети</h3>
+            <p>Работа с LLM, генерация контента, аналитика, интеграция AI в продукты.</p>
+        </div>
+        <div class="card">
+            <h3>Информационная безопасность</h3>
+            <p>Понимание угроз, фишинга, социальной инженерии, аналитики ИБ.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Проекты</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Pulsar Ecosystem</h3>
+            <p>
+                Экосистема аналитики информационной безопасности
+                для разработчиков и стартапов.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Pulsar Security Company</h3>
+            <p>
+                Концепция компании, ориентированной на безопасность,
+                аналитику и защиту цифровых продуктов.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Миссия</h2>
+    <p>
+        Сделать безопасность не сложной, а встроенной.
+        Чтобы разработчики думали о продукте, а риски
+        выявлялись и анализировались автоматически.
+    </p>
+</section>
+
+<footer>
+    © 2025 · Вышегуров Мусса  
+</footer>
+
+<div class="consent" id="consent">
+    <span>
+        Сайт использует технические данные для улучшения работы.
+        <a href="#">Политика конфиденциальности</a>
+    </span>
+    <button onclick="accept()">Принять</button>
+</div>
+
+<script>
+    function accept() {
+        document.getElementById('consent').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
